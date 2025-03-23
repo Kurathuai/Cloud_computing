@@ -1,0 +1,39 @@
+Deployment Strategies for Kubernetes on OpenStack
+Kubernetes on OpenStack with Terraform
+Steps:
+
+Define OpenStack resources in a Terraform script.
+Use Terraform to provision VMs and install Kubernetes.
+
+Code Example
+provider "openstack" {
+  user_name   = "admin"
+  tenant_name = "admin"
+  password    = "password"
+  auth_url    = "https://openstack.Athuai.com:5000/v3"
+}
+
+resource "openstack_compute_instance_v2" "master" {
+  name            = "k8s-master"
+  image_name      = "Ubuntu-20.04"
+  flavor_name     = "m1.medium"
+  key_pair        = "mykey"
+  network {
+    name = "private-net"
+  }
+}
+
+resource "openstack_compute_instance_v2" "workers" {
+  count           = 2
+  name            = "k8s-worker-${count.index}"
+  image_name      = "Ubuntu-20.04"
+  flavor_name     = "m1.medium"
+  key_pair        = "mykey"
+  network {
+    name = "private-net"
+  }
+}
+
+output "master_ip" {
+  value = openstack_compute_instance_v2.master.access_ip_v4
+}
