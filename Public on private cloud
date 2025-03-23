@@ -1,0 +1,12 @@
+Deployment Strategies of Public Cloud on Private Cloud
+Deploying public cloud services on a private cloud is a crucial aspect of Hybrid Cloud or Multi-Cloud strategies.
+This approach is useful when organizations want to leverage the scalability of public clouds while maintaining control and security in a private cloud.
+Below are some key deployment strategies
+
+Different deployment strategies for moving from public cloud to private cloud include:
+
+Lift-and-Shift (Rehosting) → Simple migration without modifications.
+Replatforming → Minor optimizations while migrating.
+Refactoring → Rewriting apps to use private cloud-native services.
+Hybrid Cloud Deployment → Using public and private clouds together.
+Cloud Bursting → Expanding workloads to public cloud on-demand.
