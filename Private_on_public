@@ -1,0 +1,24 @@
+Deployment Strategies of Private Cloud on Public Cloud
+Deploying a private cloud on a public cloud is known as Virtual Private Cloud (VPC) or Hybrid Cloud Deployment. 
+This involves creating a logically isolated network within a public cloud provider, offering privacy, security
+dedicated resources while leveraging public cloud scalability.
+
+Deployment Strategies
+
+Virtual Private Cloud (VPC)
+A logically isolated section within a public cloud.
+Provides private networking, custom IP addressing, and firewall rules.
+Example: AWS VPC, Google Cloud VPC, Azure Virtual Network.
+
+Hybrid Cloud
+Combines on-premises private cloud and public cloud resources.
+Secure connectivity via VPN or Direct Connect (AWS), ExpressRoute (Azure).
+Example: A company keeps sensitive workloads on-premises but uses public cloud for scaling.
+
+Dedicated Hosts/Instances
+Uses physical servers dedicated to one organization within a public cloud.
+Provides better compliance and security.
+
+Bare Metal Cloud
+Physical servers in the public cloud without a hypervisor.
+Useful for workloads that require high performance without virtualization overhead.
