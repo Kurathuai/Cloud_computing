@@ -1,0 +1,24 @@
+Deploying OpenStack on Kubernetes: 
+Strategies and Implementations
+Deploying OpenStack on Kubernetes provides a containerized approach to managing cloud infrastructure. Kubernetes can manage OpenStack services as containerized workloads, improving scalability, portability, and maintainability.
+
+Deployment Strategies
+
+Several strategies exist for deploying OpenStack on Kubernetes, including:
+
+Kolla-Kubernetes
+Kolla provides production-ready Docker images for OpenStack services.
+Kolla-Kubernetes was an earlier project that used Kubernetes to deploy these services, but it has been deprecated.
+
+ OpenStack-Helm
+OpenStack-Helm provides a collection of Helm charts to deploy OpenStack services on Kubernetes.
+It allows flexibility and scalability, making it the most preferred approach.
+
+Airship
+Airship is a declarative system for deploying and managing OpenStack on Kubernetes.
+It integrates tools like Metal3 for bare-metal provisioning and Helm for application lifecycle management.
+
+ OpenStack on KubeVirt
+KubeVirt enables running OpenStack VMs inside Kubernetes.
+It is useful for hybrid environments requiring both containerized and virtualized workloads.
+
