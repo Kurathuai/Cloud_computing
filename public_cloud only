@@ -1,0 +1,35 @@
+Deployment Strategies in Public Cloud
+Public cloud services like AWS, Azure, Google Cloud provide multiple deployment strategies to optimize performance, scalability, 
+Cost efficiency. Below are the primary deployment strategies:
+
+Rolling Deployment
+A rolling deployment updates instances in phases rather than all at once. This ensures that the application remains available during updates.
+
+Key Features:
+
+Updates a subset of instances at a time.
+No downtime.
+Requires a load balancer to distribute traffic.
+
+Blue-Green Deployment
+Blue-green deployment reduces downtime by running two identical environments:
+
+Blue: Running version (old version).
+Green: New version.
+
+Once verified, traffic is switched to Green, and Blue is decommissioned.
+
+Canary Deployment
+A small percentage of users receive the new version before full deployment. 
+If stable, the new version is rolled out to everyone.
+
+A/B Testing Deployment
+Similar to Canary, but specific user groups (e.g., based on geography or cookies) receive the new version.
+Shadow Deployment
+Traffic is copied from the live system to the new version to test performance before switching.
+
+Shadow Deployment
+Traffic is copied from the live system to the new version to test performance before switching.
+
+
+
