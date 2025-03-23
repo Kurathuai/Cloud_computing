@@ -1,0 +1,28 @@
+Deployment Strategies on Public Cloud
+Public cloud deployment strategies refer to the different methods and approaches used to deploy applications services 
+Infrastructure on cloud platforms like AWS, Azure, Google Cloud 
+Here are the major deployment strategies:
+
+Lift and Shift (Rehosting)
+Also called Rehosting, this strategy involves moving applications to the cloud without modifying them.
+This is the fastest and easiest way to migrate applications to the public cloud.
+
+Refactoring (Re-architecting)
+This strategy involves modifying the application to use cloud-native features.
+Applications are redesigned to leverage cloud scalability, managed services, and microservices.
+
+Replatforming (Lift, Tinker, and Shift)
+Involves making some optimizations without fully re-architecting.
+Example: Moving a database from on-premises to Amazon RDS.
+
+Repurchasing
+Replacing an existing system with a cloud-based SaaS solution.
+Example: Moving from an on-premise CRM to Salesforce or Microsoft 365.
+
+5. Hybrid Deployment (Cloud + On-premises)
+A mix of on-premises and cloud infrastructure.
+Example: Using AWS Direct Connect to link an on-premise data center to AWS.
+
+Multi-Cloud Deployment
+Deploying applications across multiple cloud providers (AWS, Azure, Google Cloud).
+Example: Hosting databases on AWS but using AI/ML services from Google Cloud.
